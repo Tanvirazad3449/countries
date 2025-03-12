@@ -23,6 +23,9 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        
+      - name: Install Vitest Coverage Plugin
+        run: npm install --save-dev @vitest/coverage-v8
 
       - name: Run Vitest Tests
         run: npm run test -- --coverage
